@@ -1,8 +1,8 @@
-import { Player } from './player'
-import { CardDeck } from './cardDeck'
+import { Player } from './player/player'
 import { Card } from './cards/card'
-import { CardHand } from './cardHand'
+import { CardHand } from './cards/cardHand'
 import { Alexandria } from './city/alexandria'
+import { CardDeck } from './cards/cardDeck'
 
 const cards: Card[] = []
 const cardDeck = new CardDeck(cards);

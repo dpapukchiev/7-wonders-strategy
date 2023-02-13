@@ -1,4 +1,4 @@
-import { Card } from "./cards/card";
+import { Card } from "./card";
 
 export class CardDeck {
     constructor(private cards: Card[]) {

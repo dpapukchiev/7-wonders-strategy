@@ -1,5 +1,5 @@
 import { CityName } from "./cityNames";
-import { Wonder } from "../wonder";
+import { Wonder } from "./wonder";
 
 export class City {
     constructor(

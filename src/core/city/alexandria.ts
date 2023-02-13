@@ -2,7 +2,7 @@ import { Cost } from "../cost/cost";
 import { VictoryPointEffect } from "../effects/victoryPointEffect";
 import { ResourceBundle } from "../resource/resourceBundle";
 import { ResourceType } from "../resource/ResourceType";
-import { Wonder } from "../wonder";
+import { Wonder } from "./wonder";
 import { City } from "./city";
 import { CityName } from "./cityNames";
 

@@ -1,5 +1,5 @@
-import { CardHand } from "./cardHand";
-import { City } from "./city/city";
+import { CardHand } from "../cards/cardHand";
+import { City } from "../city/city";
 import { GoldVault } from "./goldVault";
 
 export class Player {

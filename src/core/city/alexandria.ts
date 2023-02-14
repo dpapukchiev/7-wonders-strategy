@@ -2,7 +2,7 @@ import { Cost } from "../cost/cost";
 import { VictoryPointEffect } from "../effects/victoryPointEffect";
 import { ResourceBundle } from "../resource/resourceBundle";
 import { ResourceType } from "../resource/ResourceType";
-import { Wonder } from "./wonder";
+import { Wonder as WonderStage } from "./wonderStage";
 import { City } from "./city";
 import { CityName } from "./cityNames";
 
@@ -11,7 +11,7 @@ class AlexandriaCity extends City {
         super(
             CityName.ALEXANDRIA,
             [
-                new Wonder(
+                new WonderStage(
                     new VictoryPointEffect(3),
                     Cost.newBuilder()
                         .resources([

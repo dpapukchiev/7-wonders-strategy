@@ -5,7 +5,7 @@ export class VictoryPointEffect extends Effect {
     constructor(
         private rewardedPoints: number
     ) {
-        super()
+        super();
         this.rewardedPoints = rewardedPoints;
     }
 }

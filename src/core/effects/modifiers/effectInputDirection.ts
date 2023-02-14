@@ -1,0 +1,7 @@
+export enum EffectInputDirection {
+    SELF_ONLY,
+    NEIGHBOURS_ONLY,
+    LEFT_NEIGHBOUR_ONLY,
+    RIGHT_NEIGHBOUR_ONLY,
+    SELF_AND_NEIGHBOURS
+}

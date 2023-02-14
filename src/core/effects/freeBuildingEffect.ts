@@ -5,6 +5,7 @@ export class FreeBuildingEffect extends Effect {
     constructor(
         private freeBuildings: CardName[]
     ) {
-        super()
+        super();
+        this.freeBuildings = freeBuildings;
     }
 }

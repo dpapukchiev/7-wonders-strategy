@@ -1,23 +1,26 @@
 import { CardName } from "../core/cards/cardName";
 import { CardType } from "../core/cards/cardType";
 import { ScienceSymbol } from "../core/cards/scienceSymbol";
-import { ComplexAndedEffect } from "../core/effects/complexAndedEffect";
-import { EffectInputDirection } from "../core/effects/modifiers/effectInputDirection";
-import { FreeBuildingEffect } from "../core/effects/freeBuildingEffect";
-import { FreeConstructionEffect } from "../core/effects/freeConstructionEffect";
-import { GainResourceEffect } from "../core/effects/gainResourceEffect";
-import { GetGoldCoinsPerCardEffect } from "../core/effects/getGoldCoinsPerCardEffect";
-import { GetGoldCoinsPerWonderEffect } from "../core/effects/getGoldCoinsPerWonderStageEffect";
-import { GetWarShieldsEffect } from "../core/effects/getWarShieldsEffect";
-import { PickResourceForATurnEffect } from "../core/effects/pickResourceForATurnEffect";
-import { PreferentialTradingEffect } from "../core/effects/preferentialTradingEffect";
-import { ScienceDevelopmentEffect } from "../core/effects/scienceDevelopmentEffect";
-import { VictoryPointEffect } from "../core/effects/victoryPointEffect";
-import { VictoryPointPerCardEffect } from "../core/effects/victoryPointPerCardEffect";
-import { VictoryPointPerWarPointEffect } from "../core/effects/victoryPointPerWarPointEffect";
-import { VictoryPointPerWonderEffect } from "../core/effects/victoryPointPerWonderStageEffect";
 import { ResourceBundle } from "../core/resource/resourceBundle";
 import { ResourceType } from "../core/resource/ResourceType";
+import {
+    ComplexAndedEffect,
+    FreeBuildingEffect,
+    FreeConstructionEffect,
+    GainResourceEffect,
+    GetGoldCoinsPerCardEffect,
+    GetGoldCoinsPerWonderEffect,
+    GetWarShieldsEffect,
+    PickResourceForATurnEffect,
+    PreferentialTradingEffect,
+    ScienceDevelopmentEffect,
+    VictoryPointEffect,
+    VictoryPointPerCardEffect,
+    VictoryPointPerWarPointEffect,
+    VictoryPointPerWonderEffect
+} from "../core/effects/allEffects";
+import { EffectInputDirection } from "../core/effects/modifiers/effectInputDirection";
+import { CopyGuildEffect } from "../core/effects/copyGuildCardEffect";
 
 const rawMaterials = [
     ResourceType.RAW_MATERIAL_CLAY,
@@ -79,3 +82,5 @@ new ComplexAndedEffect(
 new FreeConstructionEffect()
 
 new FreeBuildingEffect([CardName.FORUM])
+
+new CopyGuildEffect(new VictoryPointPerCardEffect(2, CardType.MANUFACTURED_GOOD, EffectInputDirection.SELF_AND_NEIGHBOURS));

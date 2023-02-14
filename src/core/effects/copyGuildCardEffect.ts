@@ -2,7 +2,5 @@ import { Effect } from "./effect";
 
 export class CopyGuildEffect extends Effect {
 
-    constructor() {
-        super();
-    }
+    // TODO: figure out how this is applied on demand
 }

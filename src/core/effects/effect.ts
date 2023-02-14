@@ -3,4 +3,6 @@ export class Effect {
     constructor() {
         this.isConsumed = false;
     }
+
+    // TODO: figure out how effects are applied
 }
